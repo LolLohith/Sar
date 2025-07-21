@@ -15,14 +15,20 @@ EPOCHS = 10
 BATCH_SIZE = 4
 
 DATA_DIR = 'data'
-TRAIN_EDGE = os.path.join(DATA_DIR, 'train/edge')
-TRAIN_GABOR = os.path.join(DATA_DIR, 'train/gabor')
-TRAIN_LABEL = os.path.join(DATA_DIR, 'train/label')
-TEST_EDGE = os.path.join(DATA_DIR, 'test/edge')
-TEST_GABOR = os.path.join(DATA_DIR, 'test/gabor')
-TEST_LABEL = os.path.join(DATA_DIR, 'test/label')
-RESULT_DIR = 'results/predictions'
-COLOR_DIR = 'results/predictions_color'
+# Configuration (Use raw strings for Windows paths)
+TRAIN_EDGE = r"C:\Users\YourName\YourProject\data\train\edge"
+TRAIN_GABOR = r"C:\Users\YourName\YourProject\data\train\gabor"
+TRAIN_LABEL = r"C:\Users\YourName\YourProject\data\train\label"
+
+TEST_EDGE = r"C:\Users\YourName\YourProject\data\test\edge"
+TEST_GABOR = r"C:\Users\YourName\YourProject\data\test\gabor"
+TEST_LABEL = r"C:\Users\YourName\YourProject\data\test\label"
+
+RESULT_DIR = r"C:\Users\YourName\YourProject\results\predictions"
+COLOR_DIR = r"C:\Users\YourName\YourProject\results\predictions_color"
+
+#RESULT_DIR = 'results/predictions'
+#COLOR_DIR = 'results/predictions_color'
 os.makedirs(RESULT_DIR, exist_ok=True)
 os.makedirs(COLOR_DIR, exist_ok=True)
 
